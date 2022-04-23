@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>나의 홈페이지</title>
+  </head>
+  <link rel="stylesheet" href="./css/main.css" />
+  <style>
+    div.curTime {
+      background-color: blue;
+      color: white;
+      padding: 12px 16px;
+      width: 100px;
+    }
+
+    label,
+    input {
+      display: inline-block;
+      width: 100px;
+      padding: 8px;
+    }
+
+    label {
+      text-align: right;
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1>반갑습니다</h1>
+    </header>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./blog_list.html">Blog</a>
+      <a href="./about.html">About Me</a>
+    </nav>
+    <h1>첫번째 크기 헤드라인</h1>
+    <h2>두번째 크기 헤드라인</h2>
+    <h3>세번째 크기 헤드라인</h3>
+    <h4>네번째 크기 헤드라인</h4>
+    <h5>다섯번째 크기 헤드라인</h5>
+
+    <div class="curTime" onclick="whatTimeIsIt()">현재시각</div>
+    <div>
+      <label for="inputA">num1</label>
+      <input id="inputA" value="1" onkeyup="doSomething()" />
+    </div>
+    <div>
+      <label for="inputB">num2</label>
+      <input id="inputB" value="2" onkeyup="doSomething()" />
+    </div>
+    <p>
+      <span id="valueA">1</span> +
+      <span id="valueB">2</span>
+      = <span id="valueC">3 입니다.</span>
+    </p>
+    <p>문단</p>
+    <a href="https://www.google.com">Go to Google</a>
+    <hr />
+    <img src="./images/image_01.jpg" width="500px" />
+  </body>
+  <script src="./js/index.js"></script>
+</html>
