@@ -14,4 +14,7 @@ class Post(models.Model):
     # 지금 Post table 은 pk 라는 이름 으로 PK 가 설정 되어 있다.
     def __str__(self):
         return f'[{self.pk}]{self.title}'
+
+    def get_absolute_url(self):
+        return f'{self.pk}'
     

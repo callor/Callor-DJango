@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <title>Blog Post - Start Bootstrap Template</title>
-
-  <head>
-    <title>나의 블로그</title>
+    <title>나의 홈페이지</title>
   </head>
+  <link rel="stylesheet" href="./css/main.css" />
   <style>
     * {
       box-sizing: border-box;
@@ -27,32 +17,6 @@
       width: 100vw;
       height: 100vh;
     }
-    header {
-    background-color: rgb(113, 230, 113);
-    padding: 1rem;
-    color: white;
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
-  }
-  nav {
-    background-color: darkgreen;
-    font-size: 120%;
-    text-align: center;
-  }
-  nav a {
-    display: inline-block;
-    padding: 10px 16px;
-    text-decoration: none;
-    color: gold;
-  }
-  p {
-    font-weight: 900;
-    font-size: 20px;
-  }
-  span {
-    color: blue;
-  }
-
     div.curTime {
       background-color: blue;
       color: white;
@@ -98,16 +62,17 @@
       <a href="./about.html">About Me</a>
     </nav>
     <section>
-        {% for p in posts %}
-        <article>
-            <h1><a href="{{p.pk}}">{{p.title}}</a></h1>
-            <h3>{{p.create_at}}</h3>
-            <p>{{p.comment}}</p>
-        </article>
-      {% endfor %}
+      <h1>여기는 장현정의 블로그 입니다</h1>
+      <p>파이썬과 장고 프레임워크를 사용한 웹 어플리케이션입니다</p>
+      <p>
+        2022. 4. 23 ~ 2022. 4. 24 한국기술교육대학교 능력개발교육원에서 좋은
+        선생님과 함께 잘 익혔습니다
+      </p>
+      <p>감사합니다</p>
     </section>
     <footer>
       <address>CopyRight &copy; callor.com</address>
     </footer>
   </body>
+  <script src="./js/index.js"></script>
 </html>

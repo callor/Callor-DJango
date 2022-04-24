@@ -15,7 +15,7 @@ def blog(req):
     postAll = Post.objects.all().order_by('-pk')
     return render(
         req,
-        'views/blog_view.html',
+        'views/blog.html',
         {
             'posts': postAll
         }
