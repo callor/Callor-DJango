@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      header {
+        width:80%;
+        padding:1.2rem;
+        margin:0px auto;
+      }
+      table {
+        width: 80%;
+        margin: 10px auto;
+        border-top: 1px solid #dddd;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr {
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:nth-of-type(even) {
+        background-color: #eee;
+      }
+
+      td,
+      th {
+        padding: 12px 16px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>나의 블로그</h1>
+    </header>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>작성일자</th>
+        <th>수정일자</th>
+      </tr>
+      {% for p in posts %}
+      <tr>
+        <td>{{p.pk}}</td>
+        <td>{{p.title}}</td>
+        <td>{{p.create_at}}</td>
+        <td>{{p.update_at}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

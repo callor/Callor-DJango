@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Blog Post - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/blog-post.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/58b5d9133d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#loginModal"
+                >login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Log In</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body center">
+            <button type="button" class="btn btn-primary btn-block btn-sm">
+              <i class="fa-brands fa-google"></i>Google with Login
+            </button>
+            <button type="button" class="btn btn-warning btn-block btn-sm">
+              <i class="fa-solid fa-envelope"></i></i>Email with Signd
+            </button>
+            <button type="button" class="btn btn-info btn-block btn-sm">
+              <i class="fa-solid fa-envelope"></i></i>Email with Login
+            </button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+          <!-- Title -->
+          <h1 class="mt-4">블로그</h1>
+
+          <hr />
+
+          <!-- Post Content -->
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+            vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit
+            excepturi nam quia corporis eligendi eos magni recusandae laborum
+            minus inventore?
+          </p>
+
+          <!-- Single Comment -->
+          <div class="media mb-4">
+
+            <div class="media-body">
+              <h5 class="mt-0">블로그 첫 글쓰기</h5>
+              파이썬과 Django 프레임 워크를 활용한 블로그 프로젝트 만들기
+            </div>
+          </div>
+
+          <!-- Comment with nested comments -->
+          <div class="media mb-4">
+
+            <div class="media-body">
+              <h5 class="mt-0">BootStrap 을 사용한 화면 디자인</h5>
+              BootStrap 을 사용하여 반응형 웹 화면 디자인
+
+                <div class="media-body">
+                  <h5 class="mt-0">Re> BootStrap 을 사용한 화면 디자인</h5>
+                  실무에서도 BootStrap 이용한 화면 디자인을 많이 하나요?
+                </div>
+              </div>
+
+              <div class="media mt-4">
+
+                <div class="media-body">
+                  <h5 class="mt-0">Commenter Name</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                  scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                  vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                  nisi vulputate fringilla. Donec lacinia congue felis in
+                  faucibus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for..."
+                />
+                <span class="input-group-append">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">HTML</a>
+                    </li>
+                    <li>
+                      <a href="#">Freebies</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">JavaScript</a>
+                    </li>
+                    <li>
+                      <a href="#">CSS</a>
+                    </li>
+                    <li>
+                      <a href="#">Tutorials</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Side Widget</h5>
+            <div class="card-body">
+              You can put anything you want inside of these side widgets. They
+              are easy to use, and feature the new Bootstrap 4 card containers!
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <ul class="pagination justify-content-center mb-4">
+      <li class="page-item">
+        <a href="" class="page-link">&larr; Prev</a>
+      </li>
+      <li class="page-item">
+        <a href="" class="page-link">Next &rarr;</a>
+      </li>
+    </ul>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; callor@callor.com
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

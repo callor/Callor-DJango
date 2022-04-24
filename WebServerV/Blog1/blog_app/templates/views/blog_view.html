@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      header {
+        width:80%;
+        padding:1.2rem;
+        margin:0px auto;
+      }
+      section {
+        width: 80%;
+        margin: 10px auto;
+        border-top: 1px solid #dddd;
+        border-bottom: 1px solid #ddd;
+      }
+
+      article {
+        border-bottom:2px solid green;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>나의 블로그</h1>
+    </header>
+    <section>
+      {% for p in posts %}
+        <article>
+            <h1><a href="{{p.pk}}">{{p.title}}</a></h1>
+            <h3>{{p.create_at}}</h3>
+            <p>{{p.comment}}</p>
+        </article>
+      {% endfor %}
+    </section>
+
+  </body>
+</html>

@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class SinglePageConfig(AppConfig):
+class BlogConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Single_Page'
+    name = 'blog_app'
