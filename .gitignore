@@ -144,3 +144,8 @@ typings/
 
 # ETC
 .bak
+
+
+# django
+db.sqlite3
+*.sqlite3
